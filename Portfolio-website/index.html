@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfolio-website by Chinmay Lute</title>
+</head>
+
+<body>
+    <div data-scroll-container>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="brand-name">C <span>L</span>
+                </h1>
+                <ul>
+                    <li><a href="#" class="navlink">Home</a></li>
+                    <li><a href="#about" class="navlink">About</a></li>
+                    <li><a href="#services" class="navlink">Services</a></li>
+                    <li><a href="#portfolio" class="navlink">Portfolio</a></li>
+                    <li><a href="#contact" class="navlink">Contact</a></li>
+                    <i class="fa-solid fa-xmark nav-icon" onclick="collapse()"></i>
+                </ul>
+                <i class="fa-solid fa-bars nav-icon" onclick="show()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Chinmay</span><br>Lute</h1>
+                <p><span id="element"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------about----- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="asset/about.png" alt="this is about image" srcset="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A tech enthusiast with a passion for computers and technology, always eager to learn and explore
+                        new advancements to benefit humanity. A problem solver, sporty, adventurous, avid reader, and
+                        gamer.</p>
+
+                    <div class="tabTitles">
+                        <p class="tablink active-link" onclick="openTabContent('skills')">Skills</p>
+                        <p class="tablink" onclick="openTabContent('experience')">Experience</p>
+                        <p class="tablink" onclick="openTabContent('education')">Education</p>
+                    </div>
+
+                    <div class="tabContent active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>C/C++.</li>
+                            <li><span>Web Development</span><br>Designing Web Apps.</li>
+                            <li><span>MERN Development</span><br>Building a full stack Web app.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tabContent" id="experience">
+                        <ul>
+                            <li>Developed Blogging Website, Landing Pages, ToDoList, various games like simon
+                                challenge,
+                                dice challenge and drumkit using javascript, also developed Portfolio website using
+                                reactJS.</li>
+                            <li><span>Internship at Codsoft Company (ongoing)</span><br>Currently engaged in a
+                                dynamic
+                                internship at Codsoft Company, contributing to real-world projects.</li>
+                            <li><span>Problem-Solving (Data Structures and Algorithms)</span><br>Successfully solved
+                                over 100 programming questions related to data structures and algorithms. <br>
+                                Applied
+                                problem-solving techniques to optimize code efficiency and improve algorithmic
+                                solutions.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tabContent" id="education">
+                        <ul>
+                            <li><span>2020</span><br>HSC from Yeshwant Mahavidyalaya.</li>
+                            <li><span>2018</span><br>SSC from RDPS.</li>
+                            <li><span>2023 (ongoing)</span><br>Btech in CS from PCCOE.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------services----- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+
+            <div class="serviceList">
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        Expert web design services, crafting visually stunning and user-friendly websites to elevate
+                        your online presence and engage audiences effectively
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Apps</h2>
+                    <p>
+                        Tailored web app development, creating powerful and intuitive solutions to streamline workflows
+                        and enhance user experiences with cutting-edge technology.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>MERN Development</h2>
+                    <p>
+                        MERN stack specialists, building dynamic web applications with MongoDB, Express.js, React, and
+                        Node.js for robust and seamless performance.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------portfolio------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="portfolioList">
+                <div class="portfolioList-item">
+                    <img src="asset/portfolio-1.jpg" alt="" srcset="">
+                    <div class="overlay">
+                        <h3>Twitter Sentiment Analysis</h3>
+                        <p>Built a machine
+                            learning project that performs sentiment analysis on tweets and word sense
+                            disambiguation
+                            using Python,
+                            NLTK, and scikit-learn</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="portfolioList-item">
+                    <img src="asset/portfolio-2.jpg" alt="" srcset="">
+                    <div class="overlay">
+                        <h3>Stunning Landing Pages</h3>
+                        <p>Designed and developed a landing page with
+                            visually appealing elements, animations, and smooth transitions using HTML, CSS, and
+                            Javascript.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="portfolioList-item">
+                    <img src="asset/portfolio-3.jpg" alt="" srcset="">
+                    <div class="overlay">
+                        <h3>Blogging Web App</h3>
+                        <p> Built a blog website using NodeJS, EJS, and MongoDB. Implemented features
+                            like user authentication, commenting system, and pagination.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="btn" href="#">Load more</a>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Take A Coffee & Chat With Me</h1>
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:chinmaylute2003@gmail.com" class="p-text">chinmaylute2003@gmail.com</a>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel: +919028914170" class="p-text">+919028914170</a>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/chinmaylute/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/chinmay.lute.3"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/Chinmaylute2003"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/chinmay-lute-a99645204/?originalSubdomain=in"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <a href="asset/update resume final.pdf" class="cv-btn">Download CV</a>
+
+            <div class="contact-form">
+                <form>
+                    <input type="text" name="Name" placeholder="enter your name" required>
+                    <input type="email" name="email" placeholder="enter your email address" required>
+                    <textarea name="Message" rows="5" placeholder="enter your message"></textarea>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Chinmay Lute</p>
+        </div>
+    </div>
+</div>
+
+
+   
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        // typedjs
+        var typed = new Typed('#element', {
+            strings: ['C++ Programmer', 'MERN Developer', 'Web Developer'],
+            typeSpeed: 50,
+        });
+        // LocomotiveScroll
+
+
+        let tabLink = document.querySelectorAll('.tablink');
+        let tabContent = document.querySelectorAll('.tabContent');
+
+        function openTabContent(tabName) {
+
+            tabLink.forEach((link) => {
+                link.classList.remove('active-link');
+            })
+            tabContent.forEach((tab) => {
+                tab.classList.remove('active-tab');
+            })
+
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+
+        // ------hamburger button-----
+        let sidebar = document.querySelector('nav ul');
+        function show() {
+            sidebar.style.right = "0";
+        }
+        function collapse() {
+            sidebar.style.right = "-250px"
+        }
+
+        let navlinks = document.querySelectorAll(".navlink");
+        navlinks.forEach((navlink) => {
+            navlink.addEventListener("click", () => {
+                collapse();
+            })
+        })
+
+    </script>
+</body>
+
+</html>
